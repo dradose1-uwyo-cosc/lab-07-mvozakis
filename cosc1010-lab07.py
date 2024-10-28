@@ -1,8 +1,8 @@
-# Your Name Here
+# McCoy Vozakis
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
+# Submission Date 10/28/24
+# Lab 7
+# Lab Section: 14
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -17,9 +17,34 @@
     # If a user did not enter a number output a statement saying so
 # You will continue to prompt the user until a proper integer value is entered
 
+status = True
+
 factorial = 1
 
-print(f"The result of the factorial based on the given bound is {factorial}")
+upper_bound = input("Please input an upper bound: ")
+
+if upper_bound.isnumeric()==True:
+    upper_bound=int(upper_bound)
+    fact_range=(list(range(upper_bound)))
+    fact_range=fact_range.reverse()
+else:
+    print("Please enter an integar")
+    upper_bound=input("Please input an upper bound integar: ")
+
+while upper_bound>0:
+   for index in fact_range:
+       print(fact_range[index])
+       upper_bound-=1
+
+
+ 
+
+    
+
+
+
+
+#print(f"The result of the factorial based on the given bound is {factorial}")
 
 print("*"*75)
 # Create a while loop that prompts a user for input of an integer values
